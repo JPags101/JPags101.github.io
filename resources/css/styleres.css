@@ -17,6 +17,10 @@ body{
     text-rendering: optimizeLegibility;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .clearfix {zoom: 1}
 .clearfix:after{
     content: '.';
@@ -76,7 +80,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: #3d9970;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -101,7 +105,7 @@ h2:after {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #e67e22;
+    color: #3d9970;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -110,7 +114,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: #3d9970;
     font-size: 120%;
     margin-right: 10px;
     
@@ -126,10 +130,10 @@ h2:after {
 
 a:link,
 a:visited {
-    color: #e67e22;
+    color: #3d9970;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid #3d9970;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -159,33 +163,33 @@ input[type=submit]{
 .btn-full:link,
 .btn-full:visited,
 input[type=submit]{
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #3d9970;
+    border: 1px solid #3d9970;
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:link {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid #3d9970;
+    color: #3d9970;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active{
-    background-color: #cf6d17; 
+    background-color: #3d9970; 
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #c67e22;
+    border: 1px solid #3d9970;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #c67e22;
+    border: 1px solid #3d9970;
     color: #fff;
 }
 
@@ -193,8 +197,8 @@ input[type=submit]:active{
 /* ---- HEADER ---- */
 
 header {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))), url(imgs/scenery.jpeg);
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imgs/scenery.jpeg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))), url(imgs/sandiego.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(imgs/sandiego.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -253,7 +257,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active{
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid #3d9970;
 }
 
 /* ---- Sticky navi ---- */
@@ -278,35 +282,48 @@ header {
 .sticky .logo {display: none;}
 .sticky .logo-black {display: block;}
 
-/* ---- FEATURES ---- */
+/* ---- RESUME ---- */
 
-.section-features .long-copy {margin-bottom: 30px;}
+.section-resume .long-copy {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-resume li {
+    padding: 5px;
+}
+
+.section-resume h3 {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
 
 /* ---- MEALS ---- */
 
-.section-meals,{
+.section-photos,{
     padding: 0;
 }
 
-.meals-showcase {
+.photos-showcase {
     list-style: none;
     width: 100%;
 }
 
-.meals-showcase li {
+.photos-showcase li {
     display: block;
     float: left;
     width: 25%;
 }
 
-.meal-photo {
+.me-photo {
     width: 100%;
     margin: 0;
     overflow: hidden;
     background-color: #000;
 }
 
-.meal-photo img {
+.me-photo img {
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -319,48 +336,33 @@ header {
 }
 
 
-.meal-photo img:hover {
+.me-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
 
-/* ---- HOW IT WORKS ---- */
+/* ---- ABOUT ME ---- */
 
-.section-steps {background-color: #f4f4f4;}
+.section-profile {background-color: #f4f4f4;}
 
-.steps-box:first-child {
-    text-align: right;
+.profile-box:first-child {
+    text-align: center;
     padding-right: 3%;
     margin-top: 30px;
 }
 
-.steps-box:last-child {
+.profile-box:last-child {
     padding-left: 3%;
     margin-top: 70px;
 }
 
-.app-screen {width: 40%;}
-
-.works-step {margin-bottom: 50px;}
-
-.works-step:last-of-type {margin-bottom: 80px;}
-
-
-.works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    text-align: center;
-    font-size: 150%;
-    padding: 5px;
-    float: left;
-    margin-right: 25px; 
+.profile-photo {
+    width: 100%;
+    height: auto;
 }
+
 
 .btn-app:link,
 .btn-app:visited{border: 0;}
@@ -369,84 +371,44 @@ header {
     height: 50px;
     width: auto;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 
-/* ---- CITIES ---- */
+/* ---- CONTACTS ---- */
 
 .box img {
-    width: 100%;
     height: auto;
+    width: 100%;
     margin-bottom: 15px;
 }
 
-.city-feature {margin-bottom: 5px;}
+.box a {
+    font-size: 80%;
+}
+
+.section-contacts {
+    margin-bottom: 0;
+}
+
+.section-contacts h3 {
+    text-align: center;
+}
+
+.section-contacts a {
+    font-size: 100%;
+}
 
 
-/* ---- TESTIMONIAL ---- */
+/* ---- SKILLS ---- */
 
-.section-testimonials {
+.section-skills {
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.8)),to(rgba(0,0,0,0.8))), url(imgs/scenery.jpeg);
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(imgs/scenery.jpeg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
 }
-
-blockquote {
-    padding: 2%;
-    font-style: italic;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-}
-
-cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
-}
-
-blockquote:before {
-    content: "\201C";
-    font-size: 400%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-}
-
-cite img {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-
-/* ---- CONTACT FORM ---- */
-
-.contact-form {
-    width: 60%;
-    margin: 0 auto;
-}
-
-input[type=text],
-input[type=email],
-select,
-textarea {
-    width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-}
-
-textarea {height: 100px;}
-
-input[type=checkbox] {margin: 10px 5px 10px 0;}
-
-*:focus{outline: none}
-
 
 /* ---- FOOTER ---- */
 
@@ -508,4 +470,18 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 30px;
+}
+
+/* ---- Animations ---- */
+.js--wp-1, 
+.js--wp-2, 
+.js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated, 
+.js--wp-3.animated {
+    opacity: 1;
 }

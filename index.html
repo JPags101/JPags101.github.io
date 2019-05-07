@@ -8,23 +8,24 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/styleres.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <title>Jason's Website</title>
     </head>
     <body>
-        <header>
+        <header id="home">
             <nav class="sticky">
                 <div class="row">
                     <img src="resources/images/LogoMakr_5DItkI.png" alt="JP logo" class="logo">
                     <img src="resources/images/LogoMakr_5DItkI.png" alt="JP logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -36,55 +37,53 @@
         
         </header>
         
-        <section class="section-features">
+        <section class="section-resume js-feature-section" id="resume">
             <div class="row">
                 <h2>Resume</h2>
                 <p class="long-copy">
-                    Hello, my name is Jason Panganiban. <a href="#" class="btn-app"><img src="resources/images/download-app.svg" alt="resume (pdf)"></a>
+                    Download my full resume here: <a href="#" class="btn-app"><img src="resources/images/resume.png" alt="resume (pdf)"></a>
                 </p>
             </div>
             
-            <div class="row">
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-infinite-outline icon-big"></i>
-                    <h3>Education</h3>
-                    <p>
-                        San Diego State University
-                    </p>
+            <div class="row js--wp-1">
+                <div class="col span-1-of-3 box">
+                    <i class="ion-university icon-big"></i>
+                    <h3><u>Education</u></h3>
+                    <li>San Diego State University</li>
+                    <li>2017 - 2021 (expected)</li>
+                    <li>Bachelors of Science: Computer Science</li>
+                    <li>Graduated from Del Norte High School (San Diego, CA)</li>
                 </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-stopwatch-outline icon-big"></i>
-                    <h3>Work Experience</h3>
-                    <p>
-                        You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
-                    </p>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-world icon-big"></i>
+                    <h3><u>Work Experience</u></h3>
+                    <li></li>
                 </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-nutrition-outline icon-big"></i>
-                    <h3>Coursework</h3>
-                    <p>
-                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
-                    </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <i class="ion-ios-cart-outline icon-big"></i>
-                    <h3>Skills</h3>
-                    <p>
-                        We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
-                    </p>
+                <div class="col span-1-of-3 box">
+                    <i class="ion-ios-bookmarks icon-big"></i>
+                    <h3><u>Coursework</u></h3>
+                    <li>Intro to Computer Science (Java)</li>
+                    <li>Intermediate Computer Programming (Java)</li>
+                    <li>Assembly Language (Motorolla 6800)</li>
+                    <li>Data Structures (Java)</li>
+                    <li>Programming Languages (Python, C/C++)</li>
+                    <li>Econ 102</li>
+                    
                 </div>
             </div>
         
         </section>
         
-        <section class="section-testimonials">
+        <section class="section-skills">
             <div class="row">
-                <h2>Coding Languages</h2>
+                <h2>Coding Languages / Skills</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
                     <h3><u>Proficient</u></h3>
                     <li>Java</li>
+                    <li>Data Structures</li>
+                    <li>Object Oriented</li>
                 </div>
                 <div class="col span-1-of-3">
                     <h3><u>Knowledgable</u></h3>
@@ -102,29 +101,29 @@
         </section>
 
         
-        <section class="section-projects">
+        <section class="section-projects" id="portfolio">
             <div class="row">
                 <h2>Portfolio / Projects</h2>
             </div>
             
-            <ul class="meals-showcase clearfix">
+            <ul class="photos-showcase clearfix">
                 <li>
-                    <figure class="meal-photo">
+                    <figure class="me-photo">
                         <img src="resources/images/code1.jpeg" alt="Project 1">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
+                    <figure class="me-photo">
                         <img src="resources/images/code2.jpeg" alt="Project 2">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
+                    <figure class="me-photo">
                         <img src="resources/images/code3.jpeg" alt="Project 3">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
+                    <figure class="me-photo">
                         <img src="resources/images/code4.jpeg" alt="Project 4">
                     </figure>
                 </li>
@@ -132,7 +131,23 @@
             
         </section>
         
-        <section class="section-cities">
+        <section class="section-profile">
+            <div class="row">
+                <h2>About me</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 profile-box">
+                    <img src="resources/images/me.JPG" alt="Profile Picture" class="profile-photo js--wp-2">
+                </div>
+                <div class="col span-1-of-2 profile-box">
+                    <p>
+                        Hi my name is Jason Panganiban! I am a computer science major at San Diego State University. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-contacts" id="contact">
             <div class="row">
                 <h2>Contact / Social Media</h2>
             </div>
@@ -141,33 +156,33 @@
                 <div class="col span-1-of-4 box">
                     <img src="resources/images/gmail.png" alt="gmail">
                     <h3>Email</h3>
-                    <div class="city-feature">
-                        <i class="icon ion-social-mail icon-small"></i>
-                        <a href="#">jason.panganiban101@gmail.com</a>
+                    <div class="contacts-feature">
+                        <i class="icon ion-email-unread icon-small"></i>
+                        <a href="mailto:jason.panganiban101@gmail.com">jason.panganiban101@gmail.com</a>
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="resources/images/insta.png" alt="instagram">
                     <h3>Instagram</h3>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">@jason_panganibannn</a>
+                    <div class="contacts-feature">
+                        <i class="ion-social-instagram icon-small"></i>
+                        <a href="https://www.instagram.com/jason_panganibannn/" target="_blank">@jason_panganibannn</a>
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="resources/images/linkedin2.png" alt="linkedin">
                     <h3>Linkedin</h3>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">jason.panganiban.com</a>
+                    <div class="contacts-feature">
+                        <i class="ion-social-linkedin icon-small"></i>
+                        <a href="https://www.linkedin.com/in/jason-panganiban-743407156" target="_blank">Jason Panganiban</a>
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="resources/images/github_PNG19.png" alt="github">
                     <h3>Github</h3>
-                    <div class="city-feature">
-                        <i class="ion-social-twitter icon-small"></i>
-                        <a href="#">jpags.git</a>
+                    <div class="contacts-feature">
+                        <i class="ion-social-github icon-small"></i>
+                        <a href="https://github.com/JPags101" target="_blank">JPags101</a>
                     </div>
                 </div>
                
@@ -175,50 +190,50 @@
         
         </section>
         
-        <section class="section-meals">
+        <section class="section-photos" id="about">
             
-            <ul class="meals-showcase clearfix">
+            <ul class="photos-showcase clearfix">
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/test.jpeg" alt="Korean bibimbap with egg and vegetables">
+                    <figure class="me-photo">
+                        <img src="resources/images/mickey.jpg" alt="mickey n' me">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/test.jpeg" alt="Simple italian pizza with cherry tomatoes">
+                    <figure class="me-photo">
+                        <img src="resources/images/family.jpg" alt="family photo">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/test.jpeg" alt="Chicken breast steak with vegetables">
+                    <figure class="me-photo">
+                        <img src="resources/images/couple.jpg" alt="couple">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/test.jpeg" alt="Autumn pumpkin soup">
+                    <figure class="me-photo">
+                        <img src="resources/images/skipper.jpg" alt="skipper 'n me">
                     </figure>
                 </li>
             </ul>
             
-            <ul class="meals-showcase clearfix">
+            <ul class="photos-showcase clearfix">
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/couple.jpeg" alt="Paleo beef steak with vegtables">
+                    <figure class="me-photo">
+                        <img src="resources/images/couple.jpeg" alt="">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/couple.jpeg" alt="Healthy baguette with egg and vegtables">
+                    <figure class="me-photo">
+                        <img src="resources/images/couple.jpeg" alt="">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/couple.jpeg" alt="Burger with cheddar and bacon">
+                    <figure class="me-photo">
+                        <img src="resources/images/couple.jpeg" alt="">
                     </figure>
                 </li>
                 <li>
-                    <figure class="meal-photo">
-                        <img src="resources/images/couple.jpeg" alt="Granola with cherries and strawberries">
+                    <figure class="me-photo">
+                        <img src="resources/images/couple.jpeg" alt="">
                     </figure>
                 </li>
             </ul>
@@ -253,6 +268,14 @@
             </div>
             
         </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min,js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/noframework.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
 
     </body>
