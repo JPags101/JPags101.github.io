@@ -235,7 +235,7 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 .main-nav li {
@@ -260,6 +260,20 @@ header {
     border-bottom: 2px solid #3d9970;
 }
 
+/* ---- Mobile navi ---- */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* ---- Sticky navi ---- */
 
 .sticky {
@@ -271,7 +285,7 @@ header {
     box-shadow: 0 2px 2px #efefef;
 }
 
-.main-nav {margin-top: 15px;}
+.sticky .main-nav {margin-top: 18px;}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited{
@@ -299,7 +313,7 @@ header {
     text-align: center;
 }
 
-/* ---- MEALS ---- */
+/* ---- PHOTOS ---- */
 
 .section-photos,{
     padding: 0;
@@ -393,10 +407,6 @@ header {
 
 .section-contacts h3 {
     text-align: center;
-}
-
-.section-contacts a {
-    font-size: 100%;
 }
 
 
